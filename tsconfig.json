@@ -1,0 +1,29 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"downlevelIteration": true,
+		"lib": ["es2020"],
+		"target": "es6" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+		"module": "commonjs" /* Specify what module code is generated. */,
+		"moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
+		"baseUrl": "lib",
+		"resolveJsonModule": true /* Enable importing .json files */,
+		"declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
+		"declarationDir": "dist/types" /* Configure the root directory for where declaration files are emitted */,
+		"declarationMap": true /* Generates a source map for .d.ts files which map back to the original .ts source file */,
+		"sourceMap": true /* Create source map files for emitted JavaScript files. */,
+		"outDir": "dist/cjs" /* Specify an output folder for all emitted files. */,
+		"esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */,
+		"forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+		"strict": false /* Enable all strict type-checking options. */,
+		"noImplicitAny": false /* Enable error reporting for expressions and declarations with an implied `any` type.. */,
+		"skipLibCheck": false /* Skip type checking all .d.ts files. */,
+		"types": ["node"],
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true
+	},
+	"include": [
+    "src"
+  ],
+	"exclude": ["node_modules", "dist"]
+}

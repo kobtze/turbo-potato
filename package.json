@@ -1,6 +1,30 @@
 {
-	"name": "turbo-potato",
-	"version": "1.0.0",
-	"dependencies": {
-	}
+  "name": "nodejs-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest --detectOpenHandles --forceExit  --coverage=false",
+    "build": "tsc --build --clean && tsc --build -f",
+    "start": "ts-node --project tsconfig.json src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobtze/turbo-potato.git"
+  },
+  "author": "Kobi D",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "lru-cache": "^10.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
 }
