@@ -1,0 +1,29 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"downlevelIteration": true,
+		"lib": ["es2020"],
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"baseUrl": "lib",
+		"resolveJsonModule": true,
+		"declaration": true,
+		"declarationDir": "dist/types",
+		"declarationMap": true,
+		"sourceMap": true,
+		"outDir": "dist/cjs",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": false,
+		"noImplicitAny": false,
+		"skipLibCheck": false,
+		"types": ["node"],
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true
+	},
+	"include": [
+    "src"
+  ],
+	"exclude": ["node_modules", "dist"]
+}

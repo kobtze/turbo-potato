@@ -1,0 +1,24 @@
+{
+	"companies": [
+		{
+			"name": "Sony",
+			"users": [
+				{
+					"name": "John Doe",
+					"email": "jdoe@sony.com",
+					"todoCount": 3
+				}
+			]
+		},
+		{
+			"name": "Nokia",
+			"users": [
+				{
+					"name": "Rachel Doe",
+					"email": "rdoe@nokia.com",
+					"todoCount": 5
+				}
+			]
+		}
+	]
+}
