@@ -132,7 +132,7 @@ async function getTodos (users: User[]): Promise<Todo[]> {
 	return todos;
 }
 
-function getUserPostCountMap (posts: Post[]): Map<number, number> {
+export function getUserPostCountMap (posts: Post[]): Map<number, number> {
 	let map = new Map();
 	posts.forEach(p => {
 		const userId = p.userId;
@@ -143,7 +143,7 @@ function getUserPostCountMap (posts: Post[]): Map<number, number> {
 	return map;
 }
 
-function filterPostMap (postMap: Map<number, number>, threshold: number): Map<number, number> {
+export function filterPostMap (postMap: Map<number, number>, threshold: number): Map<number, number> {
 	let newMap = new Map();
 	for (let [key, value] of postMap.entries()) {
 		value > threshold && newMap.set(key, value);
@@ -178,7 +178,7 @@ function getTodosByUserMap (todos: Todo[]): Map<number, ITodoUserSummary> {
 	return map;
 }
 
-function filterCompanies (companyNames: string[], companySearchStr: string): string[] {
+export function filterCompanies (companyNames: string[], companySearchStr: string): string[] {
 	return companyNames.filter(companyName =>
 		companyName.toLowerCase().includes(companySearchStr.toLowerCase()));
 }

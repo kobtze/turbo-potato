@@ -1,0 +1,17 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": "./",
+		"module": "commonjs",
+		"experimentalDecorators": true,
+		"strictPropertyInitialization": false,
+		"isolatedModules": false,
+		"strict": false,
+		"noImplicitAny": false,
+		"types": ["jest", "node"]
+	},
+	"timers": "fake",
+	"exclude": ["../node_modules"],
+	"include": [
+    "../src", "./**/*.ts"]
+}
